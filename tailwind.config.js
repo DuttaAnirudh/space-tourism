@@ -23,7 +23,9 @@ export default {
         condensed: "Barlow Condensed",
       },
       letterSpacing: {
-        tagline: ".15em",
+        tight: ".15em",
+        normal: "0.17em",
+        wide: ".3em",
       },
       spacing: {
         0.25: "0.0625rem",
@@ -56,33 +58,36 @@ export default {
       addBase({});
       addComponents({
         ".heading-1": {
-          "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
+          "@apply font-bellefair text-[5rem] md:text-[9.375rem] lg:text-[9.375rem] xl:text-[9.375rem] ":
             {},
         },
         ".heading-2": {
-          "@apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight":
+          "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  xl:text-[6.25rem] ":
             {},
         },
         ".heading-3": {
-          "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
+          "@apply font-bellefair text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem]":
+            {},
         },
         ".heading-4": {
-          "@apply text-[2rem] leading-normal": {},
+          "@apply font-bellefair text-[1rem] md:text-[1.5rem] lg:text-[2rem] ":
+            {},
         },
         ".heading-5": {
-          "@apply text-2xl leading-normal": {},
+          "@apply font-condensed text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] wide":
+            {},
         },
         ".sub-heading-1": {
-          "@apply font-semibold text-lg leading-8": {},
+          "@apply font-bellefair text-[1.75rem]": {},
         },
         ".sub-heading-2": {
-          "@apply font-semibold text-lg leading-8": {},
+          "@apply font-condensed text-[0.875rem] tight ": {},
         },
         ".nav-text": {
-          "@apply font-semibold text-lg leading-8": {},
+          "@apply font-condensed text-[0.875rem] lg:text-[1rem] normal": {},
         },
         ".body-text": {
-          "@apply font-semibold text-lg leading-8": {},
+          "@apply font-barlow text-[1rem]": {},
         },
       });
       addUtilities({
