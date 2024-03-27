@@ -3,18 +3,15 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/assets/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         n: {
           1: "#FFFFFF",
           2: "#D0D6F9",
-          3: "#0B0D17",
+          3: "#979797",
+          4: "#0B0D17",
         },
       },
       fontFamily: {
@@ -58,33 +55,34 @@ export default {
       addBase({});
       addComponents({
         ".heading-1": {
-          "@apply font-bellefair text-[5rem] md:text-[9.375rem] lg:text-[9.375rem] xl:text-[9.375rem] ":
+          "@apply font-bellefair text-[5rem] md:text-[9.375rem] lg:text-[9.375rem] xl:text-[9.375rem] uppercase":
             {},
         },
         ".heading-2": {
-          "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  xl:text-[6.25rem] ":
+          "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  xl:text-[6.25rem] uppercase":
             {},
         },
         ".heading-3": {
-          "@apply font-bellefair text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem]":
+          "@apply font-bellefair text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] uppercase":
             {},
         },
         ".heading-4": {
-          "@apply font-bellefair text-[1rem] md:text-[1.5rem] lg:text-[2rem] ":
+          "@apply font-bellefair text-[1rem] md:text-[1.5rem] lg:text-[2rem] uppercase":
             {},
         },
         ".heading-5": {
-          "@apply font-condensed text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] wide":
+          "@apply font-condensed text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] tracking-wide uppercase":
             {},
         },
         ".sub-heading-1": {
-          "@apply font-bellefair text-[1.75rem]": {},
+          "@apply font-bellefair text-[1.75rem] uppercase": {},
         },
         ".sub-heading-2": {
-          "@apply font-condensed text-[0.875rem] tight ": {},
+          "@apply font-condensed text-[0.875rem] tracking-tight uppercase": {},
         },
         ".nav-text": {
-          "@apply font-condensed text-[0.875rem] lg:text-[1rem] normal": {},
+          "@apply font-condensed text-[0.875rem] lg:text-[1rem] tracking-normal uppercase":
+            {},
         },
         ".body-text": {
           "@apply font-barlow text-[1rem]": {},
