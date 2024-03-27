@@ -19,10 +19,15 @@ export default {
         barlow: "Barlow",
         condensed: "Barlow Condensed",
       },
+      backgroundImage: {
+        "hero-xs": "url('../src/assets/home/background-home-mobile.jpg')",
+        "hero-sm": "url('../src/assets/home/background-home-tablet.jpg')",
+        "hero-lg": "url('../src/assets/home/background-home-desktop.jpg')",
+      },
       letterSpacing: {
-        tight: ".15em",
-        normal: "0.17em",
-        wide: ".3em",
+        tight: "2.35px",
+        normal: "2.7px",
+        wide: "4.75px",
       },
       spacing: {
         0.25: "0.0625rem",
@@ -55,8 +60,7 @@ export default {
       addBase({});
       addComponents({
         ".heading-1": {
-          "@apply font-bellefair text-[5rem] md:text-[9.375rem] lg:text-[9.375rem] xl:text-[9.375rem] uppercase":
-            {},
+          "@apply font-bellefair text-[5rem] md:text-[9.375rem]  uppercase": {},
         },
         ".heading-2": {
           "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  xl:text-[6.25rem] uppercase":
