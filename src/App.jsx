@@ -49,7 +49,9 @@ function App() {
                 handleDataOnClick={handleDataOnClick}
               />
             )}
-            {selectedItemMain === "crew" && <Crew />}
+            {selectedItemMain === "crew" && (
+              <Crew dataList={dataList} handleDataOnClick={handleDataOnClick} />
+            )}
             {selectedItemMain === "technology" && <Technology />}
           </div>
         </div>

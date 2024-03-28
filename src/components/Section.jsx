@@ -1,6 +1,10 @@
-const Section = ({ children }) => {
+const Section = ({ className, children }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2  justify-between mx-auto ">
+    <div
+      className={`grid grid-cols-1 lg:grid-cols-2  ${
+        className || "justify-between"
+      }  mx-auto`}
+    >
       {children}
     </div>
   );

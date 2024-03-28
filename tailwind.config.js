@@ -63,7 +63,7 @@ export default {
           "@apply font-bellefair text-[5rem] md:text-[9.375rem]  uppercase": {},
         },
         ".heading-2": {
-          "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  xl:text-[6.25rem] uppercase":
+          "@apply font-bellefair text-[3.5rem]  md:text-[5rem]  lg:text-[6.25rem]  uppercase":
             {},
         },
         ".heading-3": {

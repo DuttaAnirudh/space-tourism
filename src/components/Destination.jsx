@@ -5,7 +5,7 @@ import MenuBar from "./design/MenuBar";
 const Destination = ({ dataList, handleDataOnClick }) => {
   return (
     <div>
-      <h5 className="heading-5 text-n-1 pb-[3rem] text-center lg:text-left">
+      <h5 className="heading-5 text-n-1 pb-[3rem] text-center sm:text-left">
         <span className="text-n-2/40">01</span> Pick your destination
       </h5>
 
