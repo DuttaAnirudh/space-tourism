@@ -19,7 +19,7 @@ const Header = ({ selectedItem, handleNavigationMenuTab }) => {
                 className={item === selectedItem && "active"}
                 NavigationMenu
               >
-                <span>0{i}</span> {item}
+                <span className="font-bold">0{i}</span> {item}
               </MenuBar>
             </li>
           ))}
