@@ -38,7 +38,7 @@ const Crew = ({ dataList, handleDataOnClick }) => {
 
         {/* RIGHT COLUMN */}
         <div className="order-first sm:order-none pb-[2rem] sm:pb-0">
-          <div className="w-[70%] h-[30svh] mx-auto lg:w-[100%] lg:h-[100%]">
+          <div className="w-[50%] h-[50%] mx-auto lg:w-[100%] lg:h-[100%]">
             <picture>
               <source srcSet={dataList.images.webp} type="image/webp" />
               <source srcSet={dataList.images.png} type="image/png" />
