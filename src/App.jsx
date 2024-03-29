@@ -26,7 +26,6 @@ function App() {
         `bg-${selectedItemMain}-xs sm:bg-${selectedItemMain}-sm lg:bg-${selectedItemMain}-lg`
       );
     };
-    console.log(selectedItemMain);
     handleBgImageOnNavigationClick();
   }, [selectedItemMain]);
 
@@ -55,7 +54,12 @@ function App() {
             {selectedItemMain === "crew" && (
               <Crew dataList={dataList} handleDataOnClick={handleDataOnClick} />
             )}
-            {selectedItemMain === "technology" && <Technology />}
+            {selectedItemMain === "technology" && (
+              <Technology
+                dataList={dataList}
+                handleDataOnClick={handleDataOnClick}
+              />
+            )}
           </div>
         </div>
       </div>
