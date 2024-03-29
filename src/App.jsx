@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className={`${bg} bg-no-repeat bg-center bg-cover`}>
-      <div className="h-screen max-w-[87.5rem] mx-auto overflow-hidden p-[2rem]">
+      <div className="h-screen max-w-[87.5rem] mx-auto overflow-hidden sm:p-[2rem]">
         <div
           className={`flex flex-col ${
             selectedItemMain === "home"

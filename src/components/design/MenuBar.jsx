@@ -7,12 +7,12 @@ const MenuBar = ({
 }) => {
   return (
     <button
-      className={`nav-text ${NavigationMenu && "text-n-1 py-[1.5rem]"} ${
+      className={`nav-text  ${NavigationMenu && "text-n-1 py-[1.5rem]"} ${
         DestinationMenu && "text-n-2 py-[0.8rem]"
-      }  box-border inline-block cursor-pointer ${
+      }  box-border inline-block cursor-pointer border-b-[3px] ${
         className === "active"
-          ? `border-b-[3px] border-n-1 !text-n-1`
-          : `hover:border-b-[3px]
+          ? `border-n-1 !text-n-1`
+          : `border-transparent 
       hover:border-n-3`
       }`}
       onClick={onClickEvent}
