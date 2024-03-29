@@ -20,9 +20,24 @@ export default {
         condensed: "Barlow Condensed",
       },
       backgroundImage: {
-        "hero-xs": "url('../src/assets/home/background-home-mobile.jpg')",
-        "hero-sm": "url('../src/assets/home/background-home-tablet.jpg')",
-        "hero-lg": "url('../src/assets/home/background-home-desktop.jpg')",
+        "home-xs": "url('../src/assets/home/background-home-mobile.jpg')",
+        "home-sm": "url('../src/assets/home/background-home-tablet.jpg')",
+        "home-lg": "url('../src/assets/home/background-home-desktop.jpg')",
+        "destination-xs":
+          "url('../src/assets/destination/background-destination-mobile.jpg')",
+        "destination-sm":
+          "url('../src/assets/destination/background-destination-tablet.jpg')",
+        "destination-lg":
+          "url('../src/assets/destination/background-destination-desktop.jpg')",
+        "crew-xs": "url('../src/assets/crew/background-crew-mobile.jpg')",
+        "crew-sm": "url('../src/assets/crew/background-crew-tablet.jpg')",
+        "crew-lg": "url('../src/assets/crew/background-crew-desktop.jpg')",
+        "technology-xs":
+          "url('../src/assets/technology/background-technology-mobile.jpg')",
+        "technology-sm":
+          "url('../src/assets/technology/background-technology-tablet.jpg')",
+        "technology-lg":
+          "url('../src/assets/technology/background-technology-desktop.jpg')",
       },
       letterSpacing: {
         tight: "2.35px",
