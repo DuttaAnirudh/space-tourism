@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Explore from "./design/Explore";
 
-const Hero = () => {
+const Hero = ({ redirectDestinationSection }) => {
   return (
     <Section>
       {/* CONTENT */}
@@ -25,7 +25,7 @@ const Hero = () => {
 
       {/* EXPLORE BUTTON */}
       <div className="justify-self-center lg:justify-self-end lg:mr-[4rem] lg:self-end">
-        <Explore>Explore</Explore>
+        <Explore onClickEvent={redirectDestinationSection}>Explore</Explore>
       </div>
     </Section>
   );

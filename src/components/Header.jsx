@@ -6,7 +6,7 @@ import { NavigationMain } from "../constants";
 import MenuBar from "./design/MenuBar";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-const Header = ({ selectedItem, handleNavigationMenuTab }) => {
+const Header = ({ selectedItem, handleNavigationMenuTab, redirectHome }) => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const handleNavigationOnClick = () => {
@@ -31,7 +31,10 @@ const Header = ({ selectedItem, handleNavigationMenuTab }) => {
   return (
     <div className="flex items-center justify-between relative">
       {/* LOGO */}
-      <div className="max-h-[2.5rem] max-w-[2.5rem] md:max-w-full md:max-h-full ml-[2rem] mt-[2rem] sm:m-0">
+      <div
+        className="max-h-[2.5rem] max-w-[2.5rem] md:max-w-full md:max-h-full ml-[2rem] mt-[2rem] sm:m-0 cursor-pointer"
+        onClick={redirectHome}
+      >
         <img src={logo} width={48} height={48} alt="logo" />
       </div>
 

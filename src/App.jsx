@@ -20,6 +20,15 @@ function App() {
     setDataList(constants[tabName]?.at(0));
   };
 
+  const redirectHome = () => {
+    setSelectedItemMain("home");
+  };
+
+  const redirectDestinationSection = () => {
+    setSelectedItemMain("destination");
+    setDataList(constants["destination"]?.at(0));
+  };
+
   return (
     <div className={`bg-no-repeat bg-center bg-cover`}>
       {/* BACKGROUND IMAGE */}
@@ -38,11 +47,14 @@ function App() {
           <Header
             handleNavigationMenuTab={handleNavigationMenuTab}
             selectedItem={selectedItemMain}
+            redirectHome={redirectHome}
           />
 
           {/* CONTENT */}
           <div>
-            {selectedItemMain === "home" && <Hero />}
+            {selectedItemMain === "home" && (
+              <Hero redirectDestinationSection={redirectDestinationSection} />
+            )}
             {selectedItemMain === "destination" && (
               <Destination
                 dataList={dataList}
