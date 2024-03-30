@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as constants from "./constants/index";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Destination from "./components/Destination";
 import Crew from "./components/Crew";
 import Technology from "./components/Technology";
+import BackgroundImage from "./components/Background";
 
 function App() {
   const [selectedItemMain, setSelectedItemMain] = useState("home");
-  const [bg, setBg] = useState("bg-home-xs sm:bg-home-sm lg:bg-home-lg");
   const [dataList, setDataList] = useState("");
 
   const handleDataOnClick = (name, array) => {
@@ -20,18 +20,13 @@ function App() {
     setDataList(constants[tabName]?.at(0));
   };
 
-  useEffect(() => {
-    const handleBgImageOnNavigationClick = () => {
-      setBg(
-        `bg-${selectedItemMain}-xs sm:bg-${selectedItemMain}-sm lg:bg-${selectedItemMain}-lg`
-      );
-    };
-    handleBgImageOnNavigationClick();
-  }, [selectedItemMain]);
-
   return (
-    <div className={`${bg} bg-no-repeat bg-center bg-cover`}>
-      <div className="h-screen max-w-[87.5rem] mx-auto overflow-hidden sm:p-[2rem]">
+    <div className={`bg-no-repeat bg-center bg-cover`}>
+      {/* BACKGROUND IMAGE */}
+      <BackgroundImage selectedItem={selectedItemMain} />
+
+      {/* MAIN */}
+      <div className="h-screen max-w-[87.5rem] mx-auto overflow-hidden sm:p-[2rem] relative z-5">
         <div
           className={`flex flex-col ${
             selectedItemMain === "home"
@@ -39,10 +34,13 @@ function App() {
               : "gap-[6vh] lg:gap-[14vh]"
           }`}
         >
+          {/* HEADER */}
           <Header
             handleNavigationMenuTab={handleNavigationMenuTab}
             selectedItem={selectedItemMain}
           />
+
+          {/* CONTENT */}
           <div>
             {selectedItemMain === "home" && <Hero />}
             {selectedItemMain === "destination" && (

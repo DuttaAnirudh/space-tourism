@@ -1,3 +1,28 @@
+import {
+  crewAnoushehWebp,
+  crewAnoushehPng,
+  crewDouglasWebp,
+  crewDouglasPng,
+  crewMarkWebp,
+  crewMarkPng,
+  crewVictorWebp,
+  crewVictorPng,
+  destinationEuropaPng,
+  destinationEuropaWebp,
+  destinationMarsPng,
+  destinationMarsWebp,
+  destinationMoonPng,
+  destinationMoonWebp,
+  destinationTitanPng,
+  destinationTitanWebp,
+  technologyLaunchVehicleLand,
+  technologyLaunchVehiclePort,
+  technologySpaceCapsuleLand,
+  technologySpaceCapsulePort,
+  technologySpaceportLand,
+  technologySpaceportPort,
+} from "../assets/index";
+
 export const NavigationMain = ["home", "destination", "crew", "technology"];
 
 export const NavigationDestination = ["Moon", "Mars", "Europa", "Titan"];
@@ -19,8 +44,8 @@ export const destination = [
   {
     name: "Moon",
     images: {
-      png: "../src/assets/destination/image-moon.png",
-      webp: "../src/assets/destination/image-moon.webp",
+      png: destinationMoonPng,
+      webp: destinationMoonWebp,
     },
     description:
       "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
@@ -30,8 +55,8 @@ export const destination = [
   {
     name: "Mars",
     images: {
-      png: "../src/assets/destination/image-mars.png",
-      webp: "../src/assets/destination/image-mars.webp",
+      png: destinationMarsPng,
+      webp: destinationMarsWebp,
     },
     description:
       "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
@@ -41,8 +66,8 @@ export const destination = [
   {
     name: "Europa",
     images: {
-      png: "../src/assets/destination/image-europa.png",
-      webp: "../src/assets/destination/image-europa.webp",
+      png: destinationEuropaPng,
+      webp: destinationEuropaWebp,
     },
     description:
       "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -52,8 +77,8 @@ export const destination = [
   {
     name: "Titan",
     images: {
-      png: "../src/assets/destination/image-titan.png",
-      webp: "../src/assets/destination/image-titan.webp",
+      png: destinationTitanPng,
+      webp: destinationTitanWebp,
     },
     description:
       "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
@@ -66,8 +91,8 @@ export const crew = [
   {
     name: "Douglas Hurley",
     images: {
-      png: "../src/assets/crew/image-douglas-hurley.png",
-      webp: "../src/assets/crew/image-douglas-hurley.webp",
+      png: crewDouglasPng,
+      webp: crewDouglasWebp,
       height: 568,
       width: 712,
     },
@@ -77,8 +102,8 @@ export const crew = [
   {
     name: "Mark Shuttleworth",
     images: {
-      png: "../src/assets/crew/image-mark-shuttleworth.png",
-      webp: "../src/assets/crew/image-mark-shuttleworth.webp",
+      png: crewMarkPng,
+      webp: crewMarkWebp,
       height: 454,
       width: 654,
     },
@@ -88,8 +113,8 @@ export const crew = [
   {
     name: "Victor Glover",
     images: {
-      png: "../src/assets/crew/image-victor-glover.png",
-      webp: "../src/assets/crew/image-victor-glover.webp",
+      png: crewVictorPng,
+      webp: crewVictorWebp,
       height: 554,
       width: 681,
     },
@@ -99,8 +124,8 @@ export const crew = [
   {
     name: "Anousheh Ansari",
     images: {
-      png: "../src/assets/crew/image-anousheh-ansari.png",
-      webp: "../src/assets/crew/image-anousheh-ansari.webp",
+      png: crewAnoushehWebp,
+      webp: crewAnoushehPng,
       height: 615,
       width: 607,
     },
@@ -113,8 +138,8 @@ export const technology = [
   {
     name: "Launch vehicle",
     images: {
-      portrait: "../src/assets/technology/image-launch-vehicle-portrait.jpg",
-      landscape: "../src/assets/technology/image-launch-vehicle-landscape.jpg",
+      portrait: technologyLaunchVehiclePort,
+      landscape: technologyLaunchVehicleLand,
     },
     description:
       "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
@@ -122,8 +147,8 @@ export const technology = [
   {
     name: "Spaceport",
     images: {
-      portrait: "../src/assets/technology/image-spaceport-portrait.jpg",
-      landscape: "../src/assets/technology/image-spaceport-landscape.jpg",
+      portrait: technologySpaceportPort,
+      landscape: technologySpaceportLand,
     },
     description:
       "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
@@ -131,8 +156,8 @@ export const technology = [
   {
     name: "Space capsule",
     images: {
-      portrait: "../src/assets/technology/image-space-capsule-portrait.jpg",
-      landscape: "../src/assets/technology/image-space-capsule-landscape.jpg",
+      portrait: technologySpaceCapsulePort,
+      landscape: technologySpaceCapsuleLand,
     },
     description:
       "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
